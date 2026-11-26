@@ -11,5 +11,5 @@ try:
   client = Groq(api_key=st.secrets['GROQ_API_KEY'])
   st.write("API connections successfully")
 except (KeyError, FileNotFoundError):
-  st.error(GROQ_API_KEY is missing . Add it to Streamlit Cloud -> App setting secrets)
+  st.error('GROQ_API_KEY is missing . Add it to Streamlit Cloud -> App setting secrets')
   st.stop()
