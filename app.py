@@ -18,11 +18,11 @@ client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 st.title("AI Interview Assistant")
 
-role = st.selectbox["Select Job Role",
+role = st.selectbox("Select Job Role",[
 "Python Developer",
 "Java Developer",
 "Data Analyst",
 "Machine Learning Engineer",
 "Software Engineer",
 "HR Executive"
-]
+])
